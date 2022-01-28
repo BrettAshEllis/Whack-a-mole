@@ -1,9 +1,22 @@
 .text-center {
     text-align: center;
 }
+.text-size {
+    font-size: 24px;
+}
+.just-cent{
+    justify-content:center;
+}
+.just-space-b{
+    justify-content: space-between;
+}
+
+.d-flex {
+    display: flex;
+}
 
 .flex-b {
-
+    flex-basis: 50%;
 }
 
 .moleHoles {
@@ -14,10 +27,15 @@
 }
 
 .moles {
-
+    background-color: brown;
 }
 
 .startbutton {
+    width: 33%;
+    height: 25px;
+}
+
+.timer {
 
 }
 
@@ -27,12 +45,9 @@
 
 .scoreup {
     color: green;
+    transform: ;
 }
 
 .scoredown {
     color: red
 }
-
-.timer
-
-.
