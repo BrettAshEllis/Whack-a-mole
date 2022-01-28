@@ -15,15 +15,20 @@
     display: flex;
 }
 
-.flex-b {
-    flex-basis: 50%;
+.flex-dir {
+    flex-direction: column;
+}
+.flex-wrap {
+    flex-wrap: wrap;
 }
 
 .moleHoles {
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
+    flex-basis: calc((100% / 3) - 12px);
+    height: 25vh;
+    border-radius: 50%;
+    background-color: grey;
     border: 2px, solid, black;
+    margin: 3px;
 }
 
 .moles {
@@ -45,7 +50,6 @@
 
 .scoreup {
     color: green;
-    transform: ;
 }
 
 .scoredown {
