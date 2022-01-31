@@ -1,11 +1,13 @@
 let time = 0
+let score = 0
 let gameactive = false
 document.getElementById("startthegame").addEventListener('click', function () {
 
     gameactive = true
     time = 30
     document.getElementById("Timer").innerText = `Time: 30`
-    document.getElementById("startthegame").style.display = "none"
+    document.getElementById("Score").innerText = `Score: 0`
+    document.getElementById("startthegame").innertext = `Reset`
 
     let timeinterval = setInterval(() => {
 
@@ -39,7 +41,19 @@ document.getElementById("startthegame").addEventListener('click', function () {
     }, 500);
 
     document.querySelectorAll(".moleHoles").forEach((element) => {
-        element.addEventListener('click')
+        element.addEventListener('click', function (e) {
+            if (!e.target.classList.contains("moles")) {
+                score--
+                document.getElementById("Score").innerText = `Score: ${score}`
+                return
+            }
+            else {
+                score++
+                document.getElementById("Score").innerText = `Score: ${score}`
+
+            }
+
+        })
     })
 
 })
